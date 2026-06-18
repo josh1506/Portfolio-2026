@@ -1,7 +1,18 @@
 @import "tailwindcss";
 
+/* index.css */
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('../assets/fonts/NetflixSans-Rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Improvs text loading performance */
+}
+
+
 #root {
     background-color: #141414;
     height: 100vh;
     width: 100vw;
+    font-family: 'Netflix Sans', sans-serif;
 }
