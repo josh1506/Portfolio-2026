@@ -16,3 +16,7 @@
     width: 100vw;
     font-family: 'Netflix Sans', sans-serif;
 }
+
+.default-bg {
+    background-color: #141414;
+}

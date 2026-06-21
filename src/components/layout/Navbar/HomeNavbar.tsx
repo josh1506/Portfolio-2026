@@ -19,7 +19,7 @@ function HomeNavbar() {
     const activeUser: ProfileUsersProps = profileUsersItems[selectedRole]
 
     return (
-        <nav className="fixed top-0 z-50 w-full flex justify-between items-center py-5 px-14">
+        <nav className="fixed top-0 z-50 w-full flex justify-between items-center py-5 px-14 h-18 bg-linear-to-b from-black/70 to-transparent">
             <div className="flex items-center w-full">
                 <div className="mr-12 h-7">
                     <img src={nameLogo} alt="App logo" className="h-full" />
