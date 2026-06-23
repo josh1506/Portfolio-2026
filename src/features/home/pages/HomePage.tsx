@@ -10,10 +10,10 @@ function HomePage() {
   const selectedRole = "Recruiter";
 
   return (
-    <main className="w-full h-screen relative overflow-x-hidden bg-black">
+    <main className="w-full relative overflow-x-hidden bg-black">
       <HeroBackground />
 
-      <section className="relative z-10 h-10/12 flex items-end px-14 pb-16">
+      <section className="relative z-10 h-10/12 flex items-end px-14 pb-16 pt-70">
         <HeroContent />
       </section>
 

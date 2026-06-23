@@ -9,11 +9,15 @@
   font-display: swap; /* Improvs text loading performance */
 }
 
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
-#root {
+#root, body {
     background-color: #141414;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
     font-family: 'Netflix Sans', sans-serif;
 }
 
