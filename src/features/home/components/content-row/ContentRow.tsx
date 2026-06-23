@@ -11,7 +11,7 @@ import type {
   ScrollDirection,
 } from "../../types/content-row.types";
 
-function ContentRow({ selectedRole, title }: ContentRowProps) {
+function ContentRow({ title, data }: ContentRowProps) {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
@@ -49,7 +49,7 @@ function ContentRow({ selectedRole, title }: ContentRowProps) {
   }, []);
 
   return (
-    <section className="relative z-10 text-white py-8">
+    <section className="relative z-10 py-8 text-white hover:z-40">
       <h2 className="text-2xl font-bold px-14">{title}</h2>
       <div className="relative">
         {canScrollLeft && (
@@ -64,7 +64,7 @@ function ContentRow({ selectedRole, title }: ContentRowProps) {
           onScroll={updateScrollButtons}
           className="mt-4 flex gap-3 overflow-x-auto px-14 scroll-px-14 snap-x snap-mandatory scroll-smooth scrollbar-none"
         >
-          <ContentRowCard selectedRole={selectedRole} />
+          <ContentRowCard data={data} />
         </div>
 
         {canScrollRight && (

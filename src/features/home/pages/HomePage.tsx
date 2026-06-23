@@ -1,9 +1,14 @@
+// Components
 import ContentRow from "../components/content-row/ContentRow";
 import HeroBackground from "../components/hero-row/HeroBackground";
 import HeroContent from "../components/hero-row/HeroContent";
 
+// Data
+import { contentRowData } from "../data/contentRowData";
+
 function HomePage() {
-  const selectedRole = "Creator";
+  const selectedRole = "Recruiter";
+
   return (
     <main className="w-full h-screen relative overflow-x-hidden bg-black">
       <HeroBackground />
@@ -12,15 +17,13 @@ function HomePage() {
         <HeroContent />
       </section>
 
-      <ContentRow
-        title={`Today's Top Picks for ${selectedRole}`}
-        selectedRole={selectedRole}
-      />
-
-      <ContentRow
-        title={`Today's Top Picks for ${selectedRole}`}
-        selectedRole={selectedRole}
-      />
+      {contentRowData.map((row) => (
+        <ContentRow
+          key={row.title}
+          title={`${row.title} ${selectedRole}`}
+          data={[...row.data].reverse()} // Reverse the data array to display the most recent items first
+        />
+      ))}
     </main>
   );
 }
