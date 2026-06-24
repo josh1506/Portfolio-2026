@@ -3,6 +3,7 @@ import HomeFooter from "./components/layout/Footer/HomeFooter";
 import HomeNavbar from "./components/layout/Navbar/HomeNavbar";
 import BrowsePage from "./features/browse/pages/BrowsePage";
 import HomePage from "./features/home/pages/HomePage";
+import SkillsPage from "./features/skills/pages/SkillsPage";
 
 import "./styles/main.css";
 
@@ -12,7 +13,8 @@ function App() {
       {/* <BrowsePage /> */}
 
       <HomeNavbar />
-      <HomePage />
+      {/* <HomePage /> */}
+      <SkillsPage />
       <HomeFooter />
     </>
   );
