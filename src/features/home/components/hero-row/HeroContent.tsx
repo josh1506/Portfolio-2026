@@ -6,7 +6,7 @@ function HeroContent() {
       <h1 className="text-4xl font-bold">Joshua Michael Jabor</h1>
       <div className="w-full sm:w-5/6 lg:w-4/6 xl:w-3/6">
         <p className="text-xl">
-          Full-Stack Developer with 4+ years of experience building scalable web
+          Full-Stack Developer with 5 years of experience building scalable web
           applications using Django, FastAPI, React, and PostgreSQL. Experienced
           in REST API development, authentication systems, Dockerized
           deployments, and cloud hosting (AWS, DigitalOcean, Vercel). Passionate
