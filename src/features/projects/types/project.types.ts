@@ -1,4 +1,4 @@
-export type rowData = {
+export type Project = {
   id: number;
   image: string;
   title: string;
@@ -6,11 +6,4 @@ export type rowData = {
   additionalInfo: string[];
   link: string | null;
   isFeatured: boolean;
-}
-
-export type ContentRowProps = {
-  title: string;
-  data: rowData[];
 };
-
-export type ScrollDirection = "left" | "right";

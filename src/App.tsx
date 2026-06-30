@@ -7,6 +7,7 @@ import BrowsePage from "./features/browse/pages/BrowsePage";
 import ContactPage from "./features/contact/pages/ContactPage";
 import ExperiencePage from "./features/experience/pages/ExperiencePage";
 import HomePage from "./features/home/pages/HomePage";
+import ProjectPage from "./features/projects/pages/ProjectPage";
 import SkillsPage from "./features/skills/pages/SkillsPage";
 
 import "./styles/main.css";
@@ -20,7 +21,8 @@ function App() {
       {/* <HomePage /> */}
       {/* <SkillsPage /> */}
       {/* <ExperiencePage /> */}
-      <ContactPage />
+      {/* <ContactPage /> */}
+      <ProjectPage />
       <HomeFooter />
     </>
   );
