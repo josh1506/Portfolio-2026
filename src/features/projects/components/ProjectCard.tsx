@@ -17,6 +17,7 @@ function ProjectCard({ project }: ProjectCardProps) {
             src={project.image}
             alt={project.title}
             className="w-full h-full object-cover"
+            loading="lazy"
           />
           <span className="absolute top-2 right-2 text-xs bg-black/60 text-white px-2 py-1 rounded-md">
             Full-Stack

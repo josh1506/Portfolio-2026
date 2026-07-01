@@ -7,21 +7,21 @@ export const browseUsers = [
     {
         name: "Recruiter",
         img: recruiterImg,
-        url: "/",
+        url: "/recruiter/home",
     },
     {
         name: "Developer",
         img: developerImg,
-        url: "/",
+        url: "/developer/home",
     },
     {
         name: "Client",
         img: clientImg,
-        url: "/",
+        url: "/client/home",
     },
     {
         name: "Creator",
         img: creatorImg,
-        url: "/",
+        url: "/creator/home",
     },
 ]
