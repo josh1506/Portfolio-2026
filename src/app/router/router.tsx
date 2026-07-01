@@ -22,14 +22,16 @@ export const router = createBrowserRouter([
     element: <NavbarLayout />,
     children: [
       { path: ROUTES.EXPERIENCE, element: <ExperiencePage /> },
-      { path: ROUTES.SKILLS, element: <SkillsPage /> },
-      { path: ROUTES.PROJECTS, element: <ProjectPage /> },
       { path: ROUTES.CONTACT, element: <ContactPage /> },
     ],
   },
   {
     element: <MainLayout />,
-    children: [{ path: ROUTES.HOME, element: <HomePage /> }],
+    children: [
+      { path: ROUTES.HOME, element: <HomePage /> },
+      { path: ROUTES.SKILLS, element: <SkillsPage /> },
+      { path: ROUTES.PROJECTS, element: <ProjectPage /> },
+    ],
   },
   {
     path: "*",
