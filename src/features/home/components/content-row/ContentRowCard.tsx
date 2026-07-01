@@ -77,6 +77,7 @@ function ContentRowCard({ data }: { data: rowData[] }) {
             src={item.image}
             alt={`${item.title} Thumbnail`}
             className="w-full h-full object-cover rounded-sm"
+            loading="lazy"
           />
 
           <div
@@ -94,6 +95,7 @@ function ContentRowCard({ data }: { data: rowData[] }) {
                 src={item.image}
                 alt={`${item.title} Thumbnail`}
                 className="h-full w-full object-cover"
+                loading="lazy"
               />
             </div>
 

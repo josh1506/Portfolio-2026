@@ -1,4 +1,7 @@
 // Components
+import { useParams } from "react-router-dom";
+import { PROFILE_ROLES } from "../../../data/profileRoles";
+import type { ProfileRole } from "../../../types/profile.role";
 import ContentRow from "../components/content-row/ContentRow";
 import HeroBackground from "../components/hero-row/HeroBackground";
 import HeroContent from "../components/hero-row/HeroContent";
@@ -7,7 +10,10 @@ import HeroContent from "../components/hero-row/HeroContent";
 import { contentRowData } from "../data/contentRowData";
 
 function HomePage() {
-  const selectedRole = "Recruiter";
+  const { role } = useParams<{ role: string }>();
+  const selectedRole: ProfileRole = PROFILE_ROLES.includes(role as ProfileRole)
+    ? (role as ProfileRole)
+    : "recruiter";
 
   return (
     <main className="w-full relative overflow-x-hidden bg-black">

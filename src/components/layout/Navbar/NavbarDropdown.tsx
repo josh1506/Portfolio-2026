@@ -33,6 +33,7 @@ function NavbarDropdown({ activeUser }: { activeUser: ProfileUsersProps }) {
           src={activeUser.image}
           alt={activeUser.alt}
           className="w-full h-full rounded-md"
+          loading="lazy"
         />
       </div>
       <span

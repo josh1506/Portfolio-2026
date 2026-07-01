@@ -12,6 +12,7 @@ function ProfileCard() {
               src={CreativeWorksLogo}
               className="w-60 h-60 object-cover"
               alt="Creative Works Logo"
+              loading="lazy"
             />
           </div>
           <div className="pl-4 absolute bottom-0 left-0 w-full text-white flex flex-col border-l-2 m-4">
@@ -30,6 +31,7 @@ function ProfileCard() {
                 className="w-full h-full object-cover"
                 src={CreatorProfile}
                 alt="Portrait of Josh"
+                loading="lazy"
               />
             </div>
             <div className="flex flex-col">
